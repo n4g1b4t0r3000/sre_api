@@ -8,6 +8,10 @@ gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 gem "rack-cors"
+gem "bunny"
+gem "sidekiq"
+gem "sneakers"
+gem "httparty"
 
 group :development, :test do
   gem "pry"

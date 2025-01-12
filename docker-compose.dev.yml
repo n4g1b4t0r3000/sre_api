@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:13.8
+    env_file:
+      - .env.development.docker
+    volumes:
+      - db:/var/lib/postgresql/data
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.development.docker
+    command: bash -c "rails db:migrate && rails s -b 0.0.0.0"
+    depends_on:
+      - db
+
+volumes:
+  db:
+    driver: local
+
