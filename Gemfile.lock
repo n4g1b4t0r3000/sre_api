@@ -87,7 +87,7 @@ GEM
     crass (1.0.6)
     csv (3.3.2)
     date (3.3.4)
-    dotenv (3.1.4)
+    dotenv (3.1.7)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
